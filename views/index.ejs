@@ -1,0 +1,10 @@
+<%- include('head') -%>
+  <%- include('header') -%>  
+  <div id="wrapper" class="container">
+    <div><%- initialMarkup -%></div>
+  </div>
+
+  <script type="text/javascript">
+    window.initialData = <%- JSON.stringify(initialData) -%>;
+  </script>
+<%- include('footer') -%>
