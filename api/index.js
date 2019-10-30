@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import express from 'express';
 import data from '../src/testData';
 
-mongoose.connect("mongodb://localhost:27017");
+mongoose.connect("mongodb://localhost");
 
 const router = express.Router();
 const contests = data.contests.reduce((obj, contest) => {
